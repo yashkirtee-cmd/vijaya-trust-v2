@@ -104,12 +104,6 @@ ul   { list-style: none; }
   background: linear-gradient(135deg, #1C1C2E 0%, #2D1B4E 40%, #1B3A2D 100%);
   overflow: hidden;
 }
-.hero__bg {
-  position: absolute; inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1583309219338-a582f1db9a69?auto=format&fit=crop&w=1600&q=80');
-  background-size: cover; background-position: center;
-  opacity: 0.22;
-}
 .hero::before {
   content: '';
   position: absolute; inset: 0;
@@ -133,17 +127,6 @@ ul   { list-style: none; }
 .hero__sub { font-size: 1.1rem; color: rgba(255,255,255,0.75); margin-bottom: 40px; max-width: 560px; line-height: 1.8; }
 .hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
-/* ── About Snap Image ── */
-.about-snap__img { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.about-snap__img img { width: 100%; height: 420px; object-fit: cover; display: block; }
-
-/* ── Project card image ── */
-.project-card__img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 4px; }
-
-/* ── Story image ── */
-.story-img { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.story-img img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 320px; }
-
 /* ── PAGE HERO (inner pages) ── */
 .page-hero {
   background: linear-gradient(135deg, #1C1C2E 0%, #2D1B4E 40%, #1B3A2D 100%);
@@ -155,13 +138,12 @@ ul   { list-style: none; }
 
 /* ── ABOUT SNAPSHOT ── */
 .about-snap { background: var(--white); }
-.about-snap__grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: center; }
-.about-snap__right { display: flex; flex-direction: column; gap: 32px; }
+.about-snap__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
 .about-snap__text { display: flex; flex-direction: column; gap: 16px; }
 .about-snap__text p { color: var(--mid); }
 .about-snap__text em { font-style: normal; font-weight: 600; color: var(--dark); }
 .about-snap__text strong { color: var(--orange); }
-.about-snap__cards { display: flex; flex-direction: column; gap: 14px; }
+.about-snap__cards { display: flex; flex-direction: column; gap: 18px; }
 .snap-card {
   background: var(--warm); border-left: 4px solid;
   border-radius: var(--radius); padding: 22px 24px;
@@ -182,8 +164,7 @@ ul   { list-style: none; }
   transition: transform 0.2s;
 }
 .program-card:hover { transform: translateY(-4px); }
-.program-card__img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 14px; }
-.program-card__icon { font-size: 1.6rem; margin-bottom: 8px; }
+.program-card__icon { font-size: 2rem; margin-bottom: 12px; }
 .program-card h3 { font-family: var(--font-head); font-size: 1rem; color: var(--dark); margin-bottom: 8px; }
 .program-card p  { color: var(--mid); font-size: 0.9rem; margin: 0; }
 .programs-snap__cta { text-align: center; margin-top: 40px; }
@@ -259,7 +240,7 @@ ul   { list-style: none; }
 .value-card p  { color: var(--mid); font-size: 0.88rem; margin: 0; }
 
 .story-section { background: var(--white); }
-.story-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: center; }
+.story-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; align-items: start; }
 .story-text { display: flex; flex-direction: column; gap: 16px; }
 .story-text p  { color: var(--mid); }
 .story-text em { font-style: normal; font-weight: 600; color: var(--dark); }
@@ -271,9 +252,7 @@ ul   { list-style: none; }
 .highlight-card p { color: var(--mid); font-size: 0.85rem; margin: 0; }
 
 .team-section { background: var(--warm); }
-.team-img { border-radius: var(--radius); overflow: hidden; margin-bottom: 40px; box-shadow: var(--shadow); }
-.team-img img { width: 100%; height: 360px; object-fit: cover; display: block; }
-.team-cta { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.team-cta { text-align: center; margin-top: 8px; display: flex; flex-direction: column; align-items: center; gap: 20px; }
 .team-cta p { color: var(--mid); font-size: 1rem; }
 
 /* ── PROGRAMS PAGE ── */
@@ -313,7 +292,6 @@ ul   { list-style: none; }
 @media (max-width: 900px) {
   .about-snap__grid, .involve__grid, .contact__grid,
   .story-grid, .about-mv { grid-template-columns: 1fr; gap: 40px; }
-  .about-snap__right { gap: 24px; }
   .impact__grid, .values-grid { grid-template-columns: repeat(2, 1fr); }
   .programs-snap__grid { grid-template-columns: repeat(2, 1fr); }
   .footer__inner { grid-template-columns: 1fr 1fr; }
