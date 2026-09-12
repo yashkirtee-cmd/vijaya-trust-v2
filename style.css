@@ -104,6 +104,12 @@ ul   { list-style: none; }
   background: linear-gradient(135deg, #1C1C2E 0%, #2D1B4E 40%, #1B3A2D 100%);
   overflow: hidden;
 }
+.hero__bg {
+  position: absolute; inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover; background-position: center;
+  opacity: 0.18;
+}
 .hero::before {
   content: '';
   position: absolute; inset: 0;
@@ -127,6 +133,17 @@ ul   { list-style: none; }
 .hero__sub { font-size: 1.1rem; color: rgba(255,255,255,0.75); margin-bottom: 40px; max-width: 560px; line-height: 1.8; }
 .hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
+/* ── About Snap Image ── */
+.about-snap__img { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.about-snap__img img { width: 100%; height: 420px; object-fit: cover; display: block; }
+
+/* ── Project card image ── */
+.project-card__img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 4px; }
+
+/* ── Story image ── */
+.story-img { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.story-img img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 320px; }
+
 /* ── PAGE HERO (inner pages) ── */
 .page-hero {
   background: linear-gradient(135deg, #1C1C2E 0%, #2D1B4E 40%, #1B3A2D 100%);
@@ -138,7 +155,7 @@ ul   { list-style: none; }
 
 /* ── ABOUT SNAPSHOT ── */
 .about-snap { background: var(--white); }
-.about-snap__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.about-snap__grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; align-items: center; }
 .about-snap__text { display: flex; flex-direction: column; gap: 16px; }
 .about-snap__text p { color: var(--mid); }
 .about-snap__text em { font-style: normal; font-weight: 600; color: var(--dark); }
@@ -240,7 +257,7 @@ ul   { list-style: none; }
 .value-card p  { color: var(--mid); font-size: 0.88rem; margin: 0; }
 
 .story-section { background: var(--white); }
-.story-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; align-items: start; }
+.story-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: center; }
 .story-text { display: flex; flex-direction: column; gap: 16px; }
 .story-text p  { color: var(--mid); }
 .story-text em { font-style: normal; font-weight: 600; color: var(--dark); }
