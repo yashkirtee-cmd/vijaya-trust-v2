@@ -155,12 +155,13 @@ ul   { list-style: none; }
 
 /* ── ABOUT SNAPSHOT ── */
 .about-snap { background: var(--white); }
-.about-snap__grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; align-items: center; }
+.about-snap__grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: center; }
+.about-snap__right { display: flex; flex-direction: column; gap: 32px; }
 .about-snap__text { display: flex; flex-direction: column; gap: 16px; }
 .about-snap__text p { color: var(--mid); }
 .about-snap__text em { font-style: normal; font-weight: 600; color: var(--dark); }
 .about-snap__text strong { color: var(--orange); }
-.about-snap__cards { display: flex; flex-direction: column; gap: 18px; }
+.about-snap__cards { display: flex; flex-direction: column; gap: 14px; }
 .snap-card {
   background: var(--warm); border-left: 4px solid;
   border-radius: var(--radius); padding: 22px 24px;
@@ -309,6 +310,7 @@ ul   { list-style: none; }
 @media (max-width: 900px) {
   .about-snap__grid, .involve__grid, .contact__grid,
   .story-grid, .about-mv { grid-template-columns: 1fr; gap: 40px; }
+  .about-snap__right { gap: 24px; }
   .impact__grid, .values-grid { grid-template-columns: repeat(2, 1fr); }
   .programs-snap__grid { grid-template-columns: repeat(2, 1fr); }
   .footer__inner { grid-template-columns: 1fr 1fr; }
