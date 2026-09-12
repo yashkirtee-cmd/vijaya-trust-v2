@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" fill="none">
+  <rect width="300" height="240" rx="16" fill="#F0FBF7"/>
+  <!-- Graduation cap -->
+  <ellipse cx="150" cy="100" rx="65" ry="15" fill="#1B8A6B"/>
+  <path d="M150 100 L150 135 L190 118 L190 148" stroke="#1B8A6B" stroke-width="3" fill="none"/>
+  <circle cx="190" cy="152" r="8" fill="#F4631E"/>
+  <!-- Cap top -->
+  <path d="M100 98 L150 78 L200 98 L150 118 Z" fill="#1C1C2E"/>
+  <rect x="140" y="60" width="20" height="20" rx="3" fill="#1C1C2E"/>
+  <!-- Tassel -->
+  <line x1="150" y1="78" x2="165" y2="60" stroke="#FFD23F" stroke-width="2"/>
+  <circle cx="168" cy="57" r="5" fill="#FFD23F"/>
+  <line x1="168" y1="62" x2="162" y2="80" stroke="#FFD23F" stroke-width="1.5"/>
+  <line x1="168" y1="62" x2="168" y2="82" stroke="#FFD23F" stroke-width="1.5"/>
+  <line x1="168" y1="62" x2="174" y2="80" stroke="#FFD23F" stroke-width="1.5"/>
+  <!-- Girl figure -->
+  <circle cx="150" cy="175" r="22" fill="#FBBF8A"/>
+  <ellipse cx="150" cy="215" rx="26" ry="22" fill="#F4631E"/>
+  <!-- Girl face - happy -->
+  <circle cx="143" cy="173" r="3" fill="#1C1C2E"/>
+  <circle cx="157" cy="173" r="3" fill="#1C1C2E"/>
+  <path d="M144 183 Q150 189 156 183" stroke="#1C1C2E" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Certificate / scroll -->
+  <rect x="30" y="140" width="60" height="45" rx="5" fill="white" stroke="#1B8A6B" stroke-width="2"/>
+  <line x1="40" y1="155" x2="80" y2="155" stroke="#1B8A6B" stroke-width="1.5" opacity="0.6"/>
+  <line x1="40" y1="165" x2="80" y2="165" stroke="#1B8A6B" stroke-width="1.5" opacity="0.6"/>
+  <line x1="40" y1="175" x2="65" y2="175" stroke="#1B8A6B" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="60" cy="145" r="7" fill="#FFD23F"/>
+  <!-- Stars -->
+  <circle cx="255" cy="45" r="8" fill="#FFD23F"/>
+  <circle cx="238" cy="65" r="5" fill="#FFD23F" opacity="0.5"/>
+  <circle cx="272" cy="62" r="4" fill="#FFD23F" opacity="0.5"/>
+  <circle cx="35" cy="55" r="5" fill="#F4631E" opacity="0.4"/>
+  <circle cx="265" cy="175" r="5" fill="#1B8A6B" opacity="0.4"/>
+  <!-- Label -->
+  <rect x="85" y="215" width="130" height="18" rx="4" fill="#1B8A6B" opacity="0.15"/>
+  <text x="150" y="228" text-anchor="middle" font-family="Poppins,sans-serif" font-size="10" fill="#1B8A6B" font-weight="600">Scholarships</text>
+</svg>

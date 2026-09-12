@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" fill="none">
+  <rect width="300" height="240" rx="16" fill="#FFF6EE"/>
+  <!-- Sewing machine base -->
+  <rect x="60" y="150" width="180" height="50" rx="10" fill="#F4631E"/>
+  <rect x="80" y="130" width="140" height="40" rx="8" fill="#FF8C42"/>
+  <!-- Machine arm -->
+  <rect x="170" y="70" width="30" height="80" rx="8" fill="#F4631E"/>
+  <rect x="130" y="70" width="70" height="20" rx="8" fill="#FF8C42"/>
+  <!-- Needle -->
+  <rect x="183" y="145" width="4" height="30" rx="2" fill="#1C1C2E"/>
+  <polygon points="183,175 187,175 185,188" fill="#7A7A9A"/>
+  <!-- Thread spool -->
+  <ellipse cx="100" cy="110" rx="20" ry="25" fill="#1B8A6B"/>
+  <rect x="88" y="108" width="24" height="4" rx="2" fill="#25B48A"/>
+  <!-- Thread line -->
+  <path d="M100 85 Q140 75 185 148" stroke="#1B8A6B" stroke-width="2" stroke-dasharray="4 3" fill="none"/>
+  <!-- Fabric -->
+  <path d="M60 155 Q120 140 200 155" stroke="#FFD23F" stroke-width="3" fill="none"/>
+  <!-- Woman hands -->
+  <circle cx="135" cy="155" r="10" fill="#FBBF8A"/>
+  <circle cx="155" cy="155" r="10" fill="#FBBF8A"/>
+  <!-- Stars -->
+  <circle cx="240" cy="60" r="6" fill="#FFD23F"/>
+  <circle cx="55" cy="80" r="5" fill="#1B8A6B" opacity="0.5"/>
+  <circle cx="260" cy="130" r="4" fill="#F4631E" opacity="0.4"/>
+  <!-- Label -->
+  <rect x="85" y="168" width="130" height="18" rx="4" fill="white" opacity="0.4"/>
+  <text x="150" y="181" text-anchor="middle" font-family="Poppins,sans-serif" font-size="10" fill="#1C1C2E" font-weight="600">Skill Training</text>
+</svg>

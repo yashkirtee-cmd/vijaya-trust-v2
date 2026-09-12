@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" fill="none">
+  <rect width="300" height="240" rx="16" fill="#FFF6EE"/>
+  <!-- House / shelter -->
+  <polygon points="150,30 260,100 40,100" fill="#F4631E" opacity="0.8"/>
+  <rect x="60" y="98" width="180" height="110" rx="4" fill="#FF8C42" opacity="0.6"/>
+  <!-- Door -->
+  <rect x="127" y="148" width="46" height="60" rx="4" fill="#1B8A6B"/>
+  <circle cx="166" cy="180" r="3" fill="#FFD23F"/>
+  <!-- Windows -->
+  <rect x="75" y="118" width="40" height="35" rx="4" fill="white" opacity="0.8"/>
+  <line x1="95" y1="118" x2="95" y2="153" stroke="#4A4A6A" stroke-width="1.5" opacity="0.5"/>
+  <line x1="75" y1="135" x2="115" y2="135" stroke="#4A4A6A" stroke-width="1.5" opacity="0.5"/>
+  <rect x="185" y="118" width="40" height="35" rx="4" fill="white" opacity="0.8"/>
+  <line x1="205" y1="118" x2="205" y2="153" stroke="#4A4A6A" stroke-width="1.5" opacity="0.5"/>
+  <line x1="185" y1="135" x2="225" y2="135" stroke="#4A4A6A" stroke-width="1.5" opacity="0.5"/>
+  <!-- People outside -->
+  <!-- Person 1 -->
+  <circle cx="30" cy="155" r="14" fill="#FBBF8A"/>
+  <ellipse cx="30" cy="195" rx="16" ry="25" fill="#F4631E"/>
+  <ellipse cx="30" cy="145" rx="14" ry="8" fill="#1C1C2E"/>
+  <!-- Person 2 -->
+  <circle cx="270" cy="150" r="14" fill="#FBBF8A"/>
+  <ellipse cx="270" cy="190" rx="16" ry="25" fill="#1B8A6B"/>
+  <ellipse cx="270" cy="140" rx="14" ry="8" fill="#4A4A6A"/>
+  <!-- Heart above house -->
+  <path d="M150 18 C150 18 140 8 132 8 C126 8 120 13 120 19 C120 28 150 42 150 42 C150 42 180 28 180 19 C180 13 174 8 168 8 C160 8 150 18 150 18Z" fill="#FFD23F"/>
+  <!-- Stars -->
+  <circle cx="255" cy="35" r="5" fill="#FFD23F" opacity="0.6"/>
+  <circle cx="42" cy="35" r="4" fill="#F4631E" opacity="0.4"/>
+  <!-- Label -->
+  <rect x="85" y="215" width="130" height="18" rx="4" fill="#F4631E" opacity="0.15"/>
+  <text x="150" y="228" text-anchor="middle" font-family="Poppins,sans-serif" font-size="10" fill="#F4631E" font-weight="600">Community Support</text>
+</svg>

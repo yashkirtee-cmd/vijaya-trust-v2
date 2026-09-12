@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" fill="none">
+  <rect width="300" height="240" rx="16" fill="#FFF6EE"/>
+  <!-- Scale pole -->
+  <rect x="145" y="55" width="10" height="140" rx="5" fill="#4A4A6A"/>
+  <!-- Scale beam -->
+  <rect x="65" y="78" width="170" height="8" rx="4" fill="#F4631E"/>
+  <!-- Left pan -->
+  <path d="M75 86 Q75 130 110 130 Q145 130 145 86" fill="#F4631E" opacity="0.2" stroke="#F4631E" stroke-width="2"/>
+  <line x1="75" y1="86" x2="90" y2="86" stroke="#F4631E" stroke-width="2"/>
+  <line x1="128" y1="86" x2="143" y2="86" stroke="#F4631E" stroke-width="2"/>
+  <!-- Left pan items (justice symbol) -->
+  <circle cx="110" cy="108" r="14" fill="#F4631E" opacity="0.7"/>
+  <text x="110" y="113" text-anchor="middle" font-family="sans-serif" font-size="14" fill="white">⚖</text>
+  <!-- Right pan (slightly lower - balanced) -->
+  <path d="M155 86 Q155 128 190 128 Q225 128 225 86" fill="#1B8A6B" opacity="0.2" stroke="#1B8A6B" stroke-width="2"/>
+  <line x1="155" y1="86" x2="170" y2="86" stroke="#1B8A6B" stroke-width="2"/>
+  <line x1="208" y1="86" x2="223" y2="86" stroke="#1B8A6B" stroke-width="2"/>
+  <!-- Right pan items (book) -->
+  <rect x="172" y="98" width="36" height="25" rx="3" fill="#1B8A6B" opacity="0.8"/>
+  <line x1="190" y1="101" x2="190" y2="120" stroke="white" stroke-width="1.5"/>
+  <!-- Base -->
+  <ellipse cx="150" cy="195" rx="45" ry="10" fill="#4A4A6A" opacity="0.2"/>
+  <rect x="133" y="185" width="34" height="12" rx="4" fill="#4A4A6A" opacity="0.3"/>
+  <!-- Woman figure -->
+  <circle cx="58" cy="55" r="18" fill="#FBBF8A"/>
+  <ellipse cx="58" cy="100" rx="22" ry="32" fill="#1B8A6B"/>
+  <!-- Woman face -->
+  <circle cx="52" cy="53" r="3" fill="#1C1C2E"/>
+  <circle cx="64" cy="53" r="3" fill="#1C1C2E"/>
+  <path d="M53 63 Q58 68 63 63" stroke="#1C1C2E" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Woman hair -->
+  <ellipse cx="58" cy="40" rx="18" ry="10" fill="#1C1C2E"/>
+  <!-- Stars -->
+  <circle cx="260" cy="45" r="6" fill="#FFD23F"/>
+  <circle cx="270" cy="170" r="5" fill="#F4631E" opacity="0.4"/>
+  <!-- Label -->
+  <rect x="85" y="208" width="130" height="18" rx="4" fill="#F4631E" opacity="0.15"/>
+  <text x="150" y="221" text-anchor="middle" font-family="Poppins,sans-serif" font-size="10" fill="#F4631E" font-weight="600">Legal Rights</text>
+</svg>

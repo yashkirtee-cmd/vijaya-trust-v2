@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" fill="none">
+  <rect width="300" height="240" rx="16" fill="#FFF6EE"/>
+  <!-- Big heart -->
+  <path d="M150 195 C150 195 60 145 60 95 C60 68 80 50 105 50 C122 50 138 60 150 75 C162 60 178 50 195 50 C220 50 240 68 240 95 C240 145 150 195 150 195Z" fill="#F4631E" opacity="0.15"/>
+  <path d="M150 180 C150 180 75 135 75 92 C75 70 92 55 113 55 C128 55 141 64 150 77 C159 64 172 55 187 55 C208 55 225 70 225 92 C225 135 150 180 150 180Z" fill="#F4631E"/>
+  <!-- Medical cross -->
+  <rect x="135" y="90" width="30" height="70" rx="6" fill="white"/>
+  <rect x="120" y="105" width="60" height="30" rx="6" fill="white"/>
+  <!-- Doctor figure -->
+  <circle cx="85" cy="65" r="20" fill="#FBBF8A"/>
+  <ellipse cx="85" cy="120" rx="26" ry="38" fill="#1B8A6B"/>
+  <!-- Stethoscope -->
+  <path d="M95 95 Q115 100 120 120 Q125 135 115 140" stroke="#1C1C2E" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="113" cy="142" r="7" fill="#F4631E"/>
+  <!-- Doctor face -->
+  <circle cx="79" cy="63" r="3" fill="#1C1C2E"/>
+  <circle cx="91" cy="63" r="3" fill="#1C1C2E"/>
+  <path d="M80 73 Q85 78 90 73" stroke="#1C1C2E" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Doctor hair/cap -->
+  <ellipse cx="85" cy="48" rx="20" ry="10" fill="white"/>
+  <rect x="70" y="44" width="30" height="6" rx="3" fill="#1B8A6B"/>
+  <!-- Stars -->
+  <circle cx="260" cy="50" r="6" fill="#FFD23F"/>
+  <circle cx="40" cy="170" r="5" fill="#1B8A6B" opacity="0.4"/>
+  <!-- Label -->
+  <rect x="85" y="200" width="130" height="18" rx="4" fill="#F4631E" opacity="0.15"/>
+  <text x="150" y="213" text-anchor="middle" font-family="Poppins,sans-serif" font-size="10" fill="#F4631E" font-weight="600">Health Awareness</text>
+</svg>

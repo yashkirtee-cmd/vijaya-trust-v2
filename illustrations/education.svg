@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" fill="none">
+  <rect width="300" height="240" rx="16" fill="#F0FBF7"/>
+  <!-- Open book -->
+  <path d="M60 160 L60 80 Q150 60 150 80 L150 160 Z" fill="#1B8A6B"/>
+  <path d="M240 160 L240 80 Q150 60 150 80 L150 160 Z" fill="#25B48A"/>
+  <path d="M150 80 L150 160" stroke="white" stroke-width="2"/>
+  <!-- Book lines (left page) -->
+  <line x1="80" y1="105" x2="140" y2="100" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="80" y1="118" x2="140" y2="113" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="80" y1="131" x2="140" y2="126" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="80" y1="144" x2="140" y2="139" stroke="white" stroke-width="2" opacity="0.6"/>
+  <!-- Book lines (right page) -->
+  <line x1="160" y1="100" x2="220" y2="105" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="160" y1="113" x2="220" y2="118" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="160" y1="126" x2="220" y2="131" stroke="white" stroke-width="2" opacity="0.6"/>
+  <!-- Pencil -->
+  <rect x="210" y="50" width="12" height="70" rx="3" transform="rotate(30 210 50)" fill="#FFD23F"/>
+  <polygon points="235,108 247,108 241,122" fill="#FBBF8A"/>
+  <rect x="210" y="50" width="12" height="12" rx="2" transform="rotate(30 210 50)" fill="#F4631E"/>
+  <!-- Child figure -->
+  <circle cx="80" cy="48" r="18" fill="#FBBF8A"/>
+  <ellipse cx="80" cy="95" rx="22" ry="30" fill="#F4631E"/>
+  <!-- Child face -->
+  <circle cx="74" cy="46" r="3" fill="#1C1C2E"/>
+  <circle cx="86" cy="46" r="3" fill="#1C1C2E"/>
+  <path d="M75 55 Q80 60 85 55" stroke="#1C1C2E" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Child hair -->
+  <ellipse cx="80" cy="34" rx="18" ry="10" fill="#1C1C2E"/>
+  <!-- Stars -->
+  <circle cx="255" cy="45" r="7" fill="#FFD23F"/>
+  <circle cx="35" cy="70" r="5" fill="#F4631E" opacity="0.4"/>
+  <circle cx="265" cy="170" r="5" fill="#1B8A6B" opacity="0.4"/>
+  <!-- Label -->
+  <rect x="85" y="185" width="130" height="18" rx="4" fill="#1B8A6B" opacity="0.15"/>
+  <text x="150" y="198" text-anchor="middle" font-family="Poppins,sans-serif" font-size="10" fill="#1B8A6B" font-weight="600">Education Support</text>
+</svg>
