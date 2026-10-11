@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,7 +16,7 @@
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="container nav__inner">
-      <a href="index.html" class="nav__logo"><span class="logo-v">V</span>ijaya Trust</a>
+      <a href="index.html" class="nav__logo"><img src="logo.svg" alt="" class="nav__mark" width="36" height="36" /><span>Vijaya <span class="nav__logo-light">Trust</span></span></a>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -57,17 +58,17 @@
         <a href="about.html" class="btn btn--primary">Our Full Story</a>
       </div>
       <div class="about-snap__cards">
-        <div class="snap-card" style="border-color: var(--orange);">
+        <div class="snap-card snap-card--orange">
           <div class="snap-card__icon">🌸</div>
           <strong>Mission</strong>
           <p>A dignified, self-reliant life for every woman and child we serve.</p>
         </div>
-        <div class="snap-card" style="border-color: var(--green);">
+        <div class="snap-card snap-card--green">
           <div class="snap-card__icon">🌱</div>
           <strong>Vision</strong>
           <p>A society where gender and poverty are never barriers to potential.</p>
         </div>
-        <div class="snap-card" style="border-color: #9B59B6;">
+        <div class="snap-card snap-card--purple">
           <div class="snap-card__icon">🤝</div>
           <strong>Values</strong>
           <p>Compassion · Dignity · Transparency · Community</p>
@@ -179,19 +180,19 @@
         <form class="volunteer-form" id="volunteerForm">
           <div class="form-group">
             <label for="vName">Full Name</label>
-            <input type="text" id="vName" placeholder="Your name" required />
+            <input type="text" id="vName" name="name" placeholder="Your name" required />
           </div>
           <div class="form-group">
             <label for="vEmail">Email</label>
-            <input type="email" id="vEmail" placeholder="your@email.com" required />
+            <input type="email" id="vEmail" name="email" placeholder="your@email.com" required />
           </div>
           <div class="form-group">
             <label for="vPhone">Phone</label>
-            <input type="tel" id="vPhone" placeholder="+91 XXXXX XXXXX" />
+            <input type="tel" id="vPhone" name="phone" placeholder="+91 XXXXX XXXXX" />
           </div>
           <div class="form-group">
             <label for="vArea">Area of Interest</label>
-            <select id="vArea">
+            <select id="vArea" name="interest">
               <option value="">Select an area</option>
               <option>Teaching / Tutoring</option>
               <option>Skill Training</option>
@@ -201,8 +202,10 @@
               <option>Other</option>
             </select>
           </div>
+          <input type="checkbox" name="botcheck" hidden tabindex="-1" autocomplete="off" />
           <button type="submit" class="btn btn--primary btn--full">Submit</button>
-          <p class="form-success" id="formSuccess">Thank you! We'll reach out soon. 🙏</p>
+          <p class="form-success" id="formSuccess" role="status">Thank you! We'll reach out soon. 🙏</p>
+          <p class="form-error" id="formError" role="alert">Sorry, something went wrong. Please email us at <a href="mailto:yashkirtee@gmail.com">yashkirtee@gmail.com</a>.</p>
         </form>
       </div>
     </div>
@@ -233,18 +236,20 @@
         <form class="contact-form" id="contactForm">
           <div class="form-group">
             <label for="cName">Name</label>
-            <input type="text" id="cName" placeholder="Your name" required />
+            <input type="text" id="cName" name="name" placeholder="Your name" required />
           </div>
           <div class="form-group">
             <label for="cEmail">Email</label>
-            <input type="email" id="cEmail" placeholder="your@email.com" required />
+            <input type="email" id="cEmail" name="email" placeholder="your@email.com" required />
           </div>
           <div class="form-group">
             <label for="cMsg">Message</label>
-            <textarea id="cMsg" rows="4" placeholder="How can we help?" required></textarea>
+            <textarea id="cMsg" name="message" rows="4" placeholder="How can we help?" required></textarea>
           </div>
+          <input type="checkbox" name="botcheck" hidden tabindex="-1" autocomplete="off" />
           <button type="submit" class="btn btn--primary btn--full">Send Message</button>
-          <p class="form-success" id="contactSuccess">Message sent! We'll get back to you soon. 🙏</p>
+          <p class="form-success" id="contactSuccess" role="status">Message sent! We'll get back to you soon. 🙏</p>
+          <p class="form-error" id="contactError" role="alert">Sorry, something went wrong. Please email us at <a href="mailto:yashkirtee@gmail.com">yashkirtee@gmail.com</a>.</p>
         </form>
       </div>
     </div>
@@ -254,7 +259,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <a href="index.html" class="nav__logo"><span class="logo-v">V</span>ijaya Trust</a>
+        <a href="index.html" class="nav__logo"><img src="logo.svg" alt="" class="nav__mark" width="36" height="36" /><span>Vijaya <span class="nav__logo-light">Trust</span></span></a>
         <p>Empowering Women. Nurturing Children. Building Futures.</p>
         <p class="footer__copy">© 2026 Vijaya Trust, Bengaluru. All rights reserved.</p>
       </div>

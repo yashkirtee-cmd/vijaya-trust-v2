@@ -14,25 +14,51 @@ if (toggle && navLinks) {
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 }
 
-// Volunteer form
-const volunteerForm = document.getElementById('volunteerForm');
-if (volunteerForm) {
-  volunteerForm.addEventListener('submit', e => {
+// Form submissions → emailed via Web3Forms (https://web3forms.com)
+// Get a free access key at web3forms.com using the inbox that should receive messages.
+const WEB3FORMS_KEY = 'e453d181-e0a3-4e42-b048-37f6fb979e2f';
+
+function wireForm(formId, subject, successId, errorId) {
+  const form = document.getElementById(formId);
+  if (!form) return;
+  const success = document.getElementById(successId);
+  const error = document.getElementById(errorId);
+  const btn = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    document.getElementById('formSuccess').style.display = 'block';
-    e.target.reset();
+    success.style.display = 'none';
+    error.style.display = 'none';
+    const label = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject,
+          from_name: 'Vijaya Trust Website',
+          ...Object.fromEntries(new FormData(form))
+        })
+      });
+      const json = await res.json();
+      if (!json.success) throw new Error(json.message);
+      success.style.display = 'block';
+      form.reset();
+    } catch (err) {
+      console.error('Form submission failed:', err);
+      error.style.display = 'block';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = label;
+    }
   });
 }
 
-// Contact form
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', e => {
-    e.preventDefault();
-    document.getElementById('contactSuccess').style.display = 'block';
-    e.target.reset();
-  });
-}
+wireForm('volunteerForm', 'New volunteer sign-up — Vijaya Trust', 'formSuccess', 'formError');
+wireForm('contactForm', 'New contact message — Vijaya Trust', 'contactSuccess', 'contactError');
 
 // Fade-in on scroll
 const fadeEls = document.querySelectorAll('.program-card, .snap-card, .impact__card, .value-card, .project-card, .highlight-card');

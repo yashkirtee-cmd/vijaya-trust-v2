@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Vijaya Trust mark: "The Embrace" — two arms form a V around a child -->
+  <path d="M11 12 Q15 46 32 55" stroke="#F4631E" stroke-width="6.5" stroke-linecap="round"/>
+  <path d="M53 12 Q49 46 32 55" stroke="#1B8A6B" stroke-width="6.5" stroke-linecap="round"/>
+  <circle cx="32" cy="22" r="6.5" fill="#FF8C42"/>
+  <path d="M22 44 Q32 30 42 44 Q32 50 22 44Z" fill="#FF8C42" opacity=".85"/>
+</svg>
